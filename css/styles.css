@@ -1,10 +1,5 @@
-/* ==========================================================================
-   AI JUGAAD CO — NEO-BRUTALIST DESIGN SYSTEM STYLESHEET
-   ========================================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Space+Grotesk:wght@700&display=swap');
 
-/* --- CSS VARIABLES / COLOR TOKENS --- */
 :root {
   --color-ink: #141414;
   --color-cream: #FFFDF7;
@@ -15,7 +10,6 @@
   --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
-/* --- GLOBAL RESET & BASE STYLES --- */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -37,7 +31,6 @@ body {
   background-color: var(--color-cream);
 }
 
-/* --- TYPOGRAPHY HELPERS --- */
 .font-display {
   font-family: var(--font-display);
 }
@@ -53,7 +46,6 @@ body {
   }
 }
 
-/* --- NEO-BRUTALIST UTILITIES & TOKENS --- */
 .bg-ink { background-color: var(--color-ink); }
 .bg-cream { background-color: var(--color-cream); }
 .bg-orange { background-color: var(--color-orange); }
@@ -69,7 +61,6 @@ body {
 .border-orange { border-color: var(--color-orange); }
 .border-cream { border-color: var(--color-cream); }
 
-/* Neo-Brutalist Hard Shadows */
 .brutal-shadow {
   box-shadow: 5px 5px 0 0 var(--color-ink);
 }
@@ -119,7 +110,6 @@ body {
   box-shadow: 2px 2px 0 0 var(--color-ink) !important;
 }
 
-/* --- HEADER & NAVIGATION --- */
 .site-header {
   position: fixed;
   top: 0;
@@ -155,7 +145,6 @@ body {
   color: var(--color-orange);
 }
 
-/* Mobile Hamburger Menu */
 .mobile-nav-toggle {
   display: none;
   width: 2.5rem;
@@ -197,7 +186,6 @@ body {
   transform: translateY(0);
 }
 
-/* --- HERO SECTION & DRAGGABLE STICKERS --- */
 .hero-section {
   position: relative;
   min-height: 88vh;
@@ -262,7 +250,6 @@ body {
   .sticker-aibots { left: 4%; bottom: 12%; }
 }
 
-/* Hero Headline & Floating Title Animation */
 .hero-title {
   font-family: var(--font-display);
   font-weight: 900;
@@ -302,7 +289,6 @@ body {
   white-space: nowrap;
 }
 
-/* Floating animation keyframes when activated */
 @keyframes floatInFromTop {
   0% {
     opacity: 0;
@@ -326,7 +312,6 @@ body {
   animation: floatInFromTop 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
 }
 
-/* Circular Rotating Badge */
 .animate-rot {
   animation: rot 14s linear infinite;
 }
@@ -336,7 +321,6 @@ body {
   to { transform: rotate(360deg); }
 }
 
-/* --- INFINITE MARQUEE BANNER --- */
 .marquee-wrapper {
   overflow: hidden;
   border-top: 2px solid var(--color-ink);
@@ -379,7 +363,6 @@ body {
   100% { transform: translateX(-50%); }
 }
 
-/* --- SERVICES & SCRATCH CARD --- */
 .scratch-card-container {
   position: relative;
   margin-top: 2rem;
@@ -422,7 +405,6 @@ body {
   opacity: 0;
 }
 
-/* --- CLIENT DM REVIEWS CAROUSEL --- */
 .reviews-scroll-container {
   display: flex;
   gap: 1.5rem;
@@ -464,7 +446,6 @@ body {
   }
 }
 
-/* --- STATS SECTION COUNTER --- */
 .stats-banner {
   border-top: 2px solid var(--color-ink);
   border-bottom: 2px solid var(--color-ink);
@@ -501,7 +482,6 @@ body {
   }
 }
 
-/* --- INTERACTIVE MULTI-STEP PROJECT MODAL --- */
 .modal-backdrop {
   position: fixed;
   inset: 0;
@@ -592,7 +572,6 @@ body {
   box-shadow: 4px 4px 0 0 var(--color-ink);
 }
 
-/* Custom Input Fields */
 .brutal-input {
   width: 100%;
   border: 2px solid var(--color-ink);

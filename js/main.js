@@ -1,7 +1,3 @@
-/* ==========================================================================
-   AI JUGAAD CO — INTERACTIVE JAVASCRIPT ENGINE (main.js)
-   ========================================================================== */
-
 document.addEventListener('DOMContentLoaded', () => {
   initDraggableStickers();
   initHeadlineSlider();
@@ -11,9 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
 });
 
-/* --------------------------------------------------------------------------
-   0. CONTINUOUS FLOATING HEADLINE SLIDER (EVERY 2 SECONDS)
-   -------------------------------------------------------------------------- */
 function initHeadlineSlider() {
   const slides = document.querySelectorAll('.headline-slide');
   if (!slides.length) return;
@@ -32,12 +25,9 @@ function initHeadlineSlider() {
     currentIndex = (currentIndex + 1) % slides.length;
     const nextSlide = slides[currentIndex];
     nextSlide.classList.add('active');
-  }, 2000); // 2 Seconds Interval
+  }, 2000);
 }
 
-/* --------------------------------------------------------------------------
-   1. DRAGGABLE STICKERS ENGINE
-   -------------------------------------------------------------------------- */
 function initDraggableStickers() {
   const stickers = document.querySelectorAll('.sticker-badge');
 
@@ -45,7 +35,6 @@ function initDraggableStickers() {
     let isDragging = false;
     let startX, startY, initialLeft, initialTop;
 
-    // Reveal stickers with animation on load
     setTimeout(() => {
       sticker.style.opacity = '1';
       sticker.style.transform = sticker.getAttribute('data-original-transform') || sticker.style.transform;
@@ -99,9 +88,6 @@ function initDraggableStickers() {
   });
 }
 
-/* --------------------------------------------------------------------------
-   2. HTML5 CANVAS SCRATCH CARD FOR SERVICES
-   -------------------------------------------------------------------------- */
 function initScratchCard() {
   const canvas = document.getElementById('scratchCanvas');
   const hint = document.getElementById('scratchHint');
@@ -115,11 +101,9 @@ function initScratchCard() {
     canvas.width = parent.offsetWidth;
     canvas.height = parent.offsetHeight;
 
-    // Fill cover with Neo-Brutalist Silver/Grey Scratch texture
     ctx.fillStyle = '#141414';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // Add pattern lines & text onto scratch layer
     ctx.fillStyle = '#FFC72E';
     ctx.font = '900 18px "Space Grotesk", "Syne", sans-serif';
     ctx.textAlign = 'center';
@@ -177,9 +161,6 @@ function initScratchCard() {
   }, { passive: true });
 }
 
-/* --------------------------------------------------------------------------
-   3. ANIMATED STATS COUNTER
-   -------------------------------------------------------------------------- */
 function initStatsCounter() {
   const statNumbers = document.querySelectorAll('.stat-number');
   if (!statNumbers.length) return;
@@ -212,9 +193,6 @@ function initStatsCounter() {
   statNumbers.forEach((num) => observer.observe(num));
 }
 
-/* --------------------------------------------------------------------------
-   4. MULTI-STEP PROJECT REQUEST MODAL
-   -------------------------------------------------------------------------- */
 function initProjectModal() {
   const modal = document.getElementById('projectModal');
   const closeBtn = document.getElementById('modalCloseBtn');
@@ -252,7 +230,6 @@ function initProjectModal() {
     document.body.style.overflow = '';
   }
 
-  // Step Option Selectors
   const optionCards = modal.querySelectorAll('.modal-option-card');
   optionCards.forEach((card) => {
     card.addEventListener('click', () => {
@@ -269,7 +246,6 @@ function initProjectModal() {
     });
   });
 
-  // Navigation Buttons
   const nextBtns = modal.querySelectorAll('.js-next-step');
   nextBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -300,7 +276,6 @@ function initProjectModal() {
     });
   });
 
-  // Submit Form
   const modalForm = document.getElementById('modalProjectForm');
   if (modalForm) {
     modalForm.addEventListener('submit', (e) => {
@@ -309,7 +284,6 @@ function initProjectModal() {
       projectData.email = document.getElementById('clientEmail').value;
       projectData.phone = document.getElementById('clientPhone').value;
 
-      // Show Success State
       showStep(4);
     });
   }
@@ -327,9 +301,6 @@ function initProjectModal() {
   }
 }
 
-/* --------------------------------------------------------------------------
-   5. MOBILE NAV MENU DRAWER
-   -------------------------------------------------------------------------- */
 function initMobileMenu() {
   const toggle = document.getElementById('mobileNavToggle');
   const drawer = document.getElementById('mobileMenuDrawer');

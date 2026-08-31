@@ -1,780 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Jugaad Co — Logos, Websites & AI Automation Studio</title>
-    <meta name="description"
-        content="AI Jugaad Co is a design and automation studio. We craft logos, build websites and wire up AI so your business looks big and moves fast.">
-    <meta name="keywords"
-        content="logo design, website design, AI automation, branding, e-commerce website, design studio India">
-    <meta property="og:title" content="AI Jugaad Co — Logos, Websites & AI Automation">
-    <meta property="og:description"
-        content="Bold brands. Smart websites. AI that works. A design and automation studio.">
-    <meta property="og:type" content="website">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Jugaad Co — Logos, Websites & AI Automation Studio</title>
+  <meta name="description" content="AI Jugaad Co is a design and automation studio. We craft logos, build websites and wire up AI so your business looks big and moves fast.">
+  <meta name="keywords" content="logo design, website design, AI automation, branding, e-commerce website, design studio India">
+  <meta property="og:title" content="AI Jugaad Co — Logos, Websites & AI Automation">
+  <meta property="og:description" content="Bold brands. Smart websites. AI that works. A design and automation studio.">
+  <meta property="og:type" content="website">
 
-    <!-- Tailwind CDN for responsive utility layout support -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Custom Neo-Brutalist Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body class="antialiased bg-cream text-ink">
 
-    <!-- ==========================================================================
-       HEADER & NAVIGATION
-       ========================================================================== -->
-    <header class="site-header">
-        <nav class="nav-container">
-            <!-- Logo -->
-            <a href="index.html" class="flex items-center gap-2.5 no-underline text-ink">
-                <span class="grid size-9 place-items-center rounded-lg bg-ink">
-                    <svg viewBox="0 0 64 64" class="size-5 text-orange" aria-hidden="true">
-                        <g stroke="currentColor" stroke-width="9" stroke-linecap="round">
-                            <line x1="32" y1="10" x2="32" y2="54"></line>
-                            <line x1="12.9" y1="21" x2="51.1" y2="43"></line>
-                            <line x1="12.9" y1="43" x2="51.1" y2="21"></line>
-                        </g>
-                    </svg>
-                </span>
-                <span class="font-display text-lg font-black tracking-tight">AI JUGAAD CO</span>
-            </a>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="flex items-center gap-2.5 no-underline text-ink">
+        <span class="grid size-9 place-items-center rounded-lg bg-ink">
+          <svg viewBox="0 0 64 64" class="size-5 text-orange" aria-hidden="true">
+            <g stroke="currentColor" stroke-width="9" stroke-linecap="round">
+              <line x1="32" y1="10" x2="32" y2="54"></line>
+              <line x1="12.9" y1="21" x2="51.1" y2="43"></line>
+              <line x1="12.9" y1="43" x2="51.1" y2="21"></line>
+            </g>
+          </svg>
+        </span>
+        <span class="font-display text-lg font-black tracking-tight">AI JUGAAD CO</span>
+      </a>
 
-            <!-- Desktop Nav Links -->
-            <div class="hidden items-center gap-8 md:flex desktop-nav">
-                <a href="#services" class="nav-link">SERVICES</a>
-                <a href="#work" class="nav-link">WORK</a>
-                <a href="about.html" class="nav-link">ABOUT</a>
-                <a href="careers.html" class="nav-link">CAREERS</a>
-                <button class="brutal-btn bg-ink text-cream hover:bg-orange js-open-modal">START A PROJECT</button>
-            </div>
+      <div class="hidden items-center gap-8 md:flex desktop-nav">
+        <a href="#services" class="nav-link">SERVICES</a>
+        <a href="#work" class="nav-link">WORK</a>
+        <a href="about.html" class="nav-link">ABOUT</a>
+        <a href="careers.html" class="nav-link">CAREERS</a>
+        <button class="brutal-btn bg-ink text-cream hover:bg-orange js-open-modal">START A PROJECT</button>
+      </div>
 
-            <!-- Mobile Nav Hamburger Button -->
-            <button id="mobileNavToggle" class="mobile-nav-toggle md:hidden" aria-label="Toggle menu"
-                aria-expanded="false">
-                <div class="flex w-5 flex-col gap-1.5">
-                    <span class="h-0.5 w-full bg-ink"></span>
-                    <span class="h-0.5 w-full bg-ink"></span>
-                    <span class="h-0.5 w-full bg-ink"></span>
-                </div>
-            </button>
-        </nav>
-    </header>
-
-    <!-- Mobile Drawer Menu -->
-    <div id="mobileMenuDrawer" class="mobile-menu-drawer md:hidden">
-        <a href="#services" class="font-display text-xl font-black text-ink">SERVICES</a>
-        <a href="#work" class="font-display text-xl font-black text-ink">WORK</a>
-        <a href="about.html" class="font-display text-xl font-black text-ink">ABOUT</a>
-        <a href="careers.html" class="font-display text-xl font-black text-ink">CAREERS</a>
-        <button class="brutal-btn bg-orange text-cream w-full mt-4 js-open-modal">START A PROJECT</button>
-    </div>
-
-    <main>
-        <!-- ==========================================================================
-         HERO SECTION WITH DRAGGABLE STICKERS & ANIMATED FLOATING HEADLINES
-         ========================================================================== -->
-        <section id="top" class="hero-section">
-            <!-- Draggable Badge 1: LOGOS -->
-            <div class="sticker-badge sticker-logos" data-original-transform="rotate(-18deg)">
-                <div class="sticker-inner bg-yellow text-ink">LOGOS</div>
-            </div>
-
-            <!-- Draggable Badge 2: WEBSITES -->
-            <div class="sticker-badge sticker-websites" data-original-transform="rotate(16deg)">
-                <div class="sticker-inner bg-orange text-cream">WEBSITES</div>
-            </div>
-
-            <!-- Draggable Badge 3: AI BOTS -->
-            <div class="sticker-badge sticker-aibots" data-original-transform="rotate(-14deg)">
-                <div class="sticker-inner bg-ink text-cream"></div>
-            </div>
-
-            <div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6">
-                <!-- Hero Animated Headline Slider (Floats down every 2 seconds) -->
-                <h1 class="hero-title">
-                    <div class="headline-slider">
-                        <!-- Slide 1 -->
-                        <div class="headline-slide active">
-                            <span>WE ARE CHEFS</span>
-                            <span class="text-outline">WE COOK WEBSITES</span>
-                        </div>
-                        <!-- Slide 2 -->
-                        <div class="headline-slide">
-                            <span>WE ARE WIZARDS</span>
-                            <span class="text-outline">WE AUTOMATE STUFF</span>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="headline-slide">
-                            <span>WE ARE ROBOTS</span>
-                            <span class="text-outline">WE MAKE CHATBOTS</span>
-                        </div>
-                        <!-- Slide 4 -->
-                        <div class="headline-slide">
-                            <span>WE ARE JUGAADS</span>
-                            <span class="text-outline">WE FIX EVERYTHING</span>
-                        </div>
-                    </div>
-                    <span class="text-orange block mt-1">AND MORE.</span>
-                </h1>
-
-                <div class="mt-6 flex flex-col gap-8 sm:mt-8 sm:flex-row sm:items-end sm:justify-between">
-                    <div class="max-w-xl">
-                        <p class="text-base font-medium leading-relaxed sm:text-xl text-ink/90">
-                            Logos, websites and AI automation — made for real businesses, not for design awards.
-                        </p>
-                        <div class="mt-6 flex flex-wrap gap-4">
-                            <button
-                                class="brutal-btn bg-ink text-cream brutal-shadow-orange hover:-translate-y-0.5 js-open-modal">START
-                                A PROJECT</button>
-                            <a href="#work" class="brutal-btn bg-paper text-ink hover:bg-yellow">SEE OUR WORK</a>
-                        </div>
-                    </div>
-
-                    <!-- Rotating Badge Graphic -->
-                    <div class="hidden shrink-0 sm:block">
-                        <div class="relative grid size-32 place-items-center">
-                            <svg viewBox="0 0 120 120" class="absolute inset-0 animate-rot">
-                                <defs>
-                                    <path id="badge-circle" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0">
-                                    </path>
-                                </defs>
-                                <text class="fill-ink font-display text-[12.5px] font-bold tracking-[0.18em]">
-                                    <textPath href="#badge-circle">DESIGN • BUILD • AUTOMATE • REPEAT •</textPath>
-                                </text>
-                            </svg>
-                            <span class="grid size-12 place-items-center rounded-full bg-orange">
-                                <svg viewBox="0 0 64 64" class="size-6 text-cream" aria-hidden="true">
-                                    <g stroke="currentColor" stroke-width="9" stroke-linecap="round">
-                                        <line x1="32" y1="10" x2="32" y2="54"></line>
-                                        <line x1="12.9" y1="21" x2="51.1" y2="43"></line>
-                                        <line x1="12.9" y1="43" x2="51.1" y2="21"></line>
-                                    </g>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="mt-8 font-display text-xs font-bold tracking-[0.2em] text-ink/50 uppercase">
-                    PSST — THE STICKERS ARE DRAGGABLE
-                </p>
-            </div>
-        </section>
-
-        <!-- ==========================================================================
-         INFINITE MARQUEE TICKER
-         ========================================================================== -->
-        <div class="marquee-wrapper">
-            <div class="marquee-content">
-                <div class="marquee-group">
-                    <span class="marquee-item">LOGO DESIGN <svg viewBox="0 0 64 64" class="size-4 text-yellow">
-                            <g stroke="currentColor" stroke-width="10" stroke-linecap="round">
-                                <line x1="32" y1="8" x2="32" y2="56"></line>
-                                <line x1="11.2" y1="20" x2="52.8" y2="44"></line>
-                                <line x1="11.2" y1="44" x2="52.8" y2="20"></line>
-                            </g>
-                        </svg></span>
-                    <span class="marquee-item">WEBSITES <svg viewBox="0 0 64 64" class="size-4 text-yellow">
-                            <g stroke="currentColor" stroke-width="10" stroke-linecap="round">
-                                <line x1="32" y1="8" x2="32" y2="56"></line>
-                                <line x1="11.2" y1="20" x2="52.8" y2="44"></line>
-                                <line x1="11.2" y1="44" x2="52.8" y2="20"></line>
-                            </g>
-                        </svg></span>
-                    <span class="marquee-item">AI AUTOMATION <svg viewBox="0 0 64 64" class="size-4 text-yellow">
-                            <g stroke="currentColor" stroke-width="10" stroke-linecap="round">
-                                <line x1="32" y1="8" x2="32" y2="56"></line>
-                                <line x1="11.2" y1="20" x2="52.8" y2="44"></line>
-                                <line x1="11.2" y1="44" x2="52.8" y2="20"></line>
-                            </g>
-                        </svg></span>
-                    <span class="marquee-item">BRANDING <svg viewBox="0 0 64 64" class="size-4 text-yellow">
-                            <g stroke="currentColor" stroke-width="10" stroke-linecap="round">
-                                <line x1="32" y1="8" x2="32" y2="56"></line>
-                                <line x1="11.2" y1="20" x2="52.8" y2="44"></line>
-                                <line x1="11.2" y1="44" x2="52.8" y2="20"></line>
-                            </g>
-                        </svg></span>
-                    <span class="marquee-item">E-COMMERCE <svg viewBox="0 0 64 64" class="size-4 text-yellow">
-                            <g stroke="currentColor" stroke-width="10" stroke-linecap="round">
-                                <line x1="32" y1="8" x2="32" y2="56"></line>
-                                <line x1="11.2" y1="20" x2="52.8" y2="44"></line>
-                                <line x1="11.2" y1="44" x2="52.8" y2="20"></line>
-                            </g>
-                        </svg></span>
-                    <span class="marquee-item">WHATSAPP BOTS <svg viewBox="0 0 64 64" class="size-4 text-yellow">
-                            <g stroke="currentColor" stroke-width="10" stroke-linecap="round">
-                                <line x1="32" y1="8" x2="32" y2="56"></line>
-                                <line x1="11.2" y1="20" x2="52.8" y2="44"></line>
-                                <line x1="11.2" y1="44" x2="52.8" y2="20"></line>
-                            </g>
-                        </svg></span>
-                </div>
-                <!-- Duplicate for continuous loop -->
-                <div class="marquee-group" aria-hidden="true">
-                    <span class="marquee-item">LOGO DESIGN <svg viewBox="0 0 64 64" class="size-4 text-yellow">
-                            <g stroke="currentColor" stroke-width="10" stroke-linecap="round">
-                                <line x1="32" y1="8" x2="32" y2="56"></line>
-                                <line x1="11.2" y1="20" x2="52.8" y2="44"></line>
-                                <line x1="11.2" y1="44" x2="52.8" y2="20"></line>
-                            </g>
-                        </svg></span>
-                    <span class="marquee-item">WEBSITES <svg viewBox="0 0 64 64" class="size-4 text-yellow">
-                            <g stroke="currentColor" stroke-width="10" stroke-linecap="round">
-                                <line x1="32" y1="8" x2="32" y2="56"></line>
-                                <line x1="11.2" y1="20" x2="52.8" y2="44"></line>
-                                <line x1="11.2" y1="44" x2="52.8" y2="20"></line>
-                            </g>
-                        </svg></span>
-                    <span class="marquee-item">AI AUTOMATION <svg viewBox="0 0 64 64" class="size-4 text-yellow">
-                            <g stroke="currentColor" stroke-width="10" stroke-linecap="round">
-                                <line x1="32" y1="8" x2="32" y2="56"></line>
-                                <line x1="11.2" y1="20" x2="52.8" y2="44"></line>
-                                <line x1="11.2" y1="44" x2="52.8" y2="20"></line>
-                            </g>
-                        </svg></span>
-                    <span class="marquee-item">BRANDING <svg viewBox="0 0 64 64" class="size-4 text-yellow">
-                            <g stroke="currentColor" stroke-width="10" stroke-linecap="round">
-                                <line x1="32" y1="8" x2="32" y2="56"></line>
-                                <line x1="11.2" y1="20" x2="52.8" y2="44"></line>
-                                <line x1="11.2" y1="44" x2="52.8" y2="20"></line>
-                            </g>
-                        </svg></span>
-                    <span class="marquee-item">E-COMMERCE <svg viewBox="0 0 64 64" class="size-4 text-yellow">
-                            <g stroke="currentColor" stroke-width="10" stroke-linecap="round">
-                                <line x1="32" y1="8" x2="32" y2="56"></line>
-                                <line x1="11.2" y1="20" x2="52.8" y2="44"></line>
-                                <line x1="11.2" y1="44" x2="52.8" y2="20"></line>
-                            </g>
-                        </svg></span>
-                    <span class="marquee-item">WHATSAPP BOTS <svg viewBox="0 0 64 64" class="size-4 text-yellow">
-                            <g stroke="currentColor" stroke-width="10" stroke-linecap="round">
-                                <line x1="32" y1="8" x2="32" y2="56"></line>
-                                <line x1="11.2" y1="20" x2="52.8" y2="44"></line>
-                                <line x1="11.2" y1="44" x2="52.8" y2="20"></line>
-                            </g>
-                        </svg></span>
-                </div>
-            </div>
+      <button id="mobileNavToggle" class="mobile-nav-toggle md:hidden" aria-label="Toggle menu" aria-expanded="false">
+        <div class="flex w-5 flex-col gap-1.5">
+          <span class="h-0.5 w-full bg-ink"></span>
+          <span class="h-0.5 w-full bg-ink"></span>
+          <span class="h-0.5 w-full bg-ink"></span>
         </div>
+      </button>
+    </nav>
+  </header>
 
-        <!-- ==========================================================================
-         SERVICES SECTION WITH SCRATCH CARD OVERLAY
-         ========================================================================== -->
-        <section id="services" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24">
-            <div>
-                <p class="font-display text-sm font-bold tracking-[0.2em] text-orange uppercase">THREE THINGS. DONE
-                    RIGHT.</p>
-                <h2 class="mt-2 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">What we do</h2>
+  <div id="mobileMenuDrawer" class="mobile-menu-drawer md:hidden">
+    <a href="#services" class="font-display text-xl font-black text-ink">SERVICES</a>
+    <a href="#work" class="font-display text-xl font-black text-ink">WORK</a>
+    <a href="about.html" class="font-display text-xl font-black text-ink">ABOUT</a>
+    <a href="careers.html" class="font-display text-xl font-black text-ink">CAREERS</a>
+    <button class="brutal-btn bg-orange text-cream w-full mt-4 js-open-modal">START A PROJECT</button>
+  </div>
+
+  <main>
+    <section id="top" class="hero-section">
+      <div class="sticker-badge sticker-logos" data-original-transform="rotate(-18deg)">
+        <div class="sticker-inner bg-yellow text-ink">LOGOS</div>
+      </div>
+
+      <div class="sticker-badge sticker-websites" data-original-transform="rotate(16deg)">
+        <div class="sticker-inner bg-orange text-cream">WEBSITES</div>
+      </div>
+
+      <div class="sticker-badge sticker-aibots" data-original-transform="rotate(-14deg)">
+        <div class="sticker-inner bg-ink text-cream">AI BOTS</div>
+      </div>
+
+      <div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6">
+        <h1 class="hero-title">
+          <div class="headline-slider">
+            <div class="headline-slide active">
+              <span>WE ARE CHEFS</span>
+              <span class="text-outline">WE COOK WEBSITES</span>
             </div>
-
-            <!-- Scratch Container -->
-            <div class="scratch-card-container">
-                <canvas id="scratchCanvas" class="scratch-canvas"></canvas>
-                <div id="scratchHint" class="scratch-hint">🖐️ SWIPE / SCRATCH TO REVEAL SERVICES</div>
-
-                <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-                    <!-- Service 1 -->
-                    <div
-                        class="flex flex-col justify-between rounded-2xl border-2 border-ink bg-yellow p-6 brutal-shadow">
-                        <div>
-                            <span class="font-display text-4xl font-black text-orange">01</span>
-                            <h3 class="mt-3 font-display text-2xl font-black tracking-tight">LOGO & BRANDING</h3>
-                            <p class="mt-2 text-sm font-medium opacity-90">A mark people remember.</p>
-                        </div>
-                        <ul class="mt-6 flex flex-col gap-2.5 border-t-2 border-ink/20 pt-4">
-                            <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide"><span
-                                    class="size-2 rounded-full bg-orange"></span>LOGO SUITES</li>
-                            <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide"><span
-                                    class="size-2 rounded-full bg-orange"></span>BRAND KITS</li>
-                            <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide"><span
-                                    class="size-2 rounded-full bg-orange"></span>SOCIAL IDENTITY</li>
-                        </ul>
-                    </div>
-
-                    <!-- Service 2 -->
-                    <div
-                        class="flex flex-col justify-between rounded-2xl border-2 border-ink bg-paper p-6 brutal-shadow">
-                        <div>
-                            <span class="font-display text-4xl font-black text-orange">02</span>
-                            <h3 class="mt-3 font-display text-2xl font-black tracking-tight">WEBSITES</h3>
-                            <p class="mt-2 text-sm font-medium opacity-90">Fast, modern, made to convert.</p>
-                        </div>
-                        <ul class="mt-6 flex flex-col gap-2.5 border-t-2 border-ink/20 pt-4">
-                            <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide"><span
-                                    class="size-2 rounded-full bg-orange"></span>E-COMMERCE STORES</li>
-                            <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide"><span
-                                    class="size-2 rounded-full bg-orange"></span>LANDING PAGES</li>
-                            <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide"><span
-                                    class="size-2 rounded-full bg-orange"></span>ADMIN DASHBOARDS</li>
-                        </ul>
-                    </div>
-
-                    <!-- Service 3 -->
-                    <div
-                        class="flex flex-col justify-between rounded-2xl border-2 border-ink bg-ink text-cream p-6 brutal-shadow">
-                        <div>
-                            <span class="font-display text-4xl font-black text-orange">03</span>
-                            <h3 class="mt-3 font-display text-2xl font-black tracking-tight">AI AUTOMATION</h3>
-                            <p class="mt-2 text-sm font-medium opacity-80">Robots for the boring stuff.</p>
-                        </div>
-                        <ul class="mt-6 flex flex-col gap-2.5 border-t-2 border-cream/20 pt-4">
-                            <li
-                                class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide text-cream">
-                                <span class="size-2 rounded-full bg-orange"></span>WHATSAPP BOTS</li>
-                            <li
-                                class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide text-cream">
-                                <span class="size-2 rounded-full bg-orange"></span>LEAD CAPTURE</li>
-                            <li
-                                class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide text-cream">
-                                <span class="size-2 rounded-full bg-orange"></span>WORKFLOW AUTOMATION</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="headline-slide">
+              <span>WE ARE WIZARDS</span>
+              <span class="text-outline">WE AUTOMATE STUFF</span>
             </div>
-        </section>
-
-        <!-- ==========================================================================
-         SELECTED WORK PORTFOLIO SECTION
-         ========================================================================== -->
-        <section id="work" class="border-y-2 border-ink bg-paper py-20">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6">
-                <div class="flex flex-wrap items-end justify-between gap-4">
-                    <div>
-                        <p class="font-display text-sm font-bold tracking-[0.2em] text-orange">SELECTED WORK</p>
-                        <h2 class="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">Built by
-                            us. Loved by clients.</h2>
-                    </div>
-                    <p class="max-w-xs text-sm font-medium text-ink/70">A few of the brands we design, build and
-                        automate for.</p>
-                </div>
-
-                <div class="mx-auto mt-12 grid max-w-5xl grid-cols-1 sm:grid-cols-2 gap-6">
-                    <!-- Work Item 1 -->
-                    <a href="https://www.deepsaindia.com/" target="_blank" rel="noopener noreferrer"
-                        class="group block overflow-hidden rounded-2xl border-2 border-ink bg-cream brutal-shadow brutal-shadow-hover no-underline text-ink">
-                        <div
-                            class="relative flex aspect-[16/9] items-center justify-center bg-orange text-cream font-display text-7xl font-black">
-                            DI
-                            <span
-                                class="absolute right-4 top-4 rounded-full border-2 border-ink bg-cream px-3 py-1 font-display text-xs font-bold text-ink">E-COMMERCE</span>
-                        </div>
-                        <div class="flex items-center justify-between border-t-2 border-ink p-5">
-                            <h3 class="font-display text-xl font-black">DEEPSA INDIA</h3>
-                            <span
-                                class="grid size-9 place-items-center rounded-full border-2 border-ink transition-colors group-hover:bg-orange group-hover:text-cream">↗</span>
-                        </div>
-                    </a>
-
-                    <!-- Work Item 2 -->
-                    <a href="https://www.woodytales.in/" target="_blank" rel="noopener noreferrer"
-                        class="group block overflow-hidden rounded-2xl border-2 border-ink bg-cream brutal-shadow brutal-shadow-hover no-underline text-ink">
-                        <div
-                            class="relative flex aspect-[16/9] items-center justify-center bg-ink text-yellow font-display text-7xl font-black">
-                            WT
-                            <span
-                                class="absolute right-4 top-4 rounded-full border-2 border-ink bg-cream px-3 py-1 font-display text-xs font-bold text-ink">E-COMMERCE</span>
-                        </div>
-                        <div class="flex items-center justify-between border-t-2 border-ink p-5">
-                            <h3 class="font-display text-xl font-black">WOODY TALES</h3>
-                            <span
-                                class="grid size-9 place-items-center rounded-full border-2 border-ink transition-colors group-hover:bg-orange group-hover:text-cream">↗</span>
-                        </div>
-                    </a>
-
-                    <!-- Work Item 3 -->
-                    <div class="group block overflow-hidden rounded-2xl border-2 border-ink bg-cream brutal-shadow">
-                        <div
-                            class="relative flex aspect-[16/9] items-center justify-center bg-yellow text-ink font-display text-7xl font-black">
-                            VP
-                            <span
-                                class="absolute right-4 top-4 rounded-full border-2 border-ink bg-cream px-3 py-1 font-display text-xs font-bold text-ink">LANDING
-                                PAGE</span>
-                        </div>
-                        <div class="flex items-center justify-between border-t-2 border-ink p-5">
-                            <h3 class="font-display text-xl font-black">VELORA PROPERTY CARE</h3>
-                        </div>
-                    </div>
-
-                    <!-- Work Item 4 -->
-                    <a href="https://clayandglaze.in/" target="_blank" rel="noopener noreferrer"
-                        class="group block overflow-hidden rounded-2xl border-2 border-ink bg-cream brutal-shadow brutal-shadow-hover no-underline text-ink">
-                        <div
-                            class="relative flex aspect-[16/9] items-center justify-center bg-paper text-ink font-display text-7xl font-black">
-                            CG
-                            <span
-                                class="absolute right-4 top-4 rounded-full border-2 border-ink bg-cream px-3 py-1 font-display text-xs font-bold text-ink">E-COMMERCE</span>
-                        </div>
-                        <div class="flex items-center justify-between border-t-2 border-ink p-5">
-                            <h3 class="font-display text-xl font-black">CLAY & GLAZE</h3>
-                            <span
-                                class="grid size-9 place-items-center rounded-full border-2 border-ink transition-colors group-hover:bg-orange group-hover:text-cream">↗</span>
-                        </div>
-                    </a>
-                </div>
+            <div class="headline-slide">
+              <span>WE ARE ROBOTS</span>
+              <span class="text-outline">WE MAKE CHATBOTS</span>
             </div>
-        </section>
-
-        <!-- ==========================================================================
-         CLIENT REVIEWS & DMS CAROUSEL
-         ========================================================================== -->
-        <section class="py-20 bg-cream">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6">
-                <div>
-                    <p class="font-display text-sm font-bold tracking-[0.2em] text-orange">SCREENSHOTS DON'T LIE</p>
-                    <h2 class="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">Straight from
-                        the DMs.</h2>
-                </div>
-
-                <div class="reviews-scroll-container mt-10">
-                    <!-- DM Review 1 -->
-                    <article class="review-card">
-                        <div
-                            class="relative flex aspect-[13/5] items-center justify-center bg-ink text-yellow border-b-2 border-ink font-display text-3xl font-black">
-                            PJ
-                            <span
-                                class="absolute right-3 top-3 rounded-full border-2 border-ink bg-cream px-2.5 py-0.5 font-display text-[0.6rem] font-bold text-ink">INSTAGRAM</span>
-                        </div>
-                        <div class="flex flex-1 flex-col p-5 gap-3">
-                            <div
-                                class="rounded-xl border-2 border-ink bg-cream p-4 text-xs font-semibold leading-relaxed">
-                                "Really appreciate your work — due to reviews and trust factor we have seen so much
-                                increase in sales volume. And ROAS has surely improved."
-                            </div>
-                            <div class="mt-auto flex items-center justify-between pt-2">
-                                <a href="https://pashupati.co/" target="_blank"
-                                    class="font-display text-xs font-black text-ink underline decoration-orange">pashupati.co</a>
-                                <span class="font-display text-[0.6rem] font-bold text-orange">JEWELRY WHOLESALER</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- DM Review 2 -->
-                    <article class="review-card">
-                        <div
-                            class="relative flex aspect-[13/5] items-center justify-center bg-orange text-cream border-b-2 border-ink font-display text-3xl font-black">
-                            DI
-                            <span
-                                class="absolute right-3 top-3 rounded-full border-2 border-ink bg-cream px-2.5 py-0.5 font-display text-[0.6rem] font-bold text-ink">INSTAGRAM</span>
-                        </div>
-                        <div class="flex flex-1 flex-col p-5 gap-3">
-                            <div
-                                class="rounded-xl border-2 border-ink bg-cream p-4 text-xs font-semibold leading-relaxed">
-                                "Loved the clean UI and how fast the store renders! Our customer conversions doubled
-                                within 2 weeks after launch."
-                            </div>
-                            <div class="mt-auto flex items-center justify-between pt-2">
-                                <a href="https://deepsaindia.com/" target="_blank"
-                                    class="font-display text-xs font-black text-ink underline decoration-orange">deepsaindia.com</a>
-                                <span class="font-display text-[0.6rem] font-bold text-orange">E-COMMERCE BRAND</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- DM Review 3 -->
-                    <article class="review-card">
-                        <div
-                            class="relative flex aspect-[13/5] items-center justify-center bg-yellow text-ink border-b-2 border-ink font-display text-3xl font-black">
-                            WT
-                            <span
-                                class="absolute right-3 top-3 rounded-full border-2 border-ink bg-cream px-2.5 py-0.5 font-display text-[0.6rem] font-bold text-ink">WHATSAPP</span>
-                        </div>
-                        <div class="flex flex-1 flex-col p-5 gap-3">
-                            <div
-                                class="rounded-xl border-2 border-ink bg-cream p-4 text-xs font-semibold leading-relaxed">
-                                "The WhatsApp lead bot is working 24/7 like a charm. No manual lead follow-ups needed
-                                anymore!"
-                            </div>
-                            <div class="mt-auto flex items-center justify-between pt-2">
-                                <a href="https://woodytales.in/" target="_blank"
-                                    class="font-display text-xs font-black text-ink underline decoration-orange">woodytales.in</a>
-                                <span class="font-display text-[0.6rem] font-bold text-orange">FURNITURE STORE</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="mt-14 text-center">
-                    <p class="font-display text-xs font-black tracking-[0.2em] text-ink/60">YOUR BRAND COULD BE ON THIS
-                        ROW</p>
-                    <div class="mt-5 inline-block relative">
-                        <button
-                            class="brutal-btn bg-orange text-cream text-lg py-4 px-10 brutal-shadow-lg js-open-modal">GET
-                            YOUR WEBSITE TODAY</button>
-                        <span
-                            class="absolute -top-3 -right-4 rotate-6 rounded-full border-2 border-ink bg-yellow px-2 py-0.5 font-display text-[0.6rem] font-black text-ink">WE
-                            REPLY IN 24 HRS</span>
-                    </div>
-                </div>
+            <div class="headline-slide">
+              <span>WE ARE JUGAADS</span>
+              <span class="text-outline">WE FIX EVERYTHING</span>
             </div>
-        </section>
+          </div>
+          <span class="text-orange block mt-1">AND MORE.</span>
+        </h1>
 
-        <!-- ==========================================================================
-         ANIMATED STATS COUNTER BANNER
-         ========================================================================== -->
-        <section class="stats-banner">
-            <div class="mx-auto max-w-7xl stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number" data-target="15" data-suffix="+">0+</div>
-                    <p class="mt-2 font-display text-xs font-bold tracking-[0.18em] text-ink/80">HAPPY CLIENTS</p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="25" data-suffix="+">0+</div>
-                    <p class="mt-2 font-display text-xs font-bold tracking-[0.18em] text-ink/80">PROJECTS SHIPPED</p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="24" data-suffix="H">&lt;0H</div>
-                    <p class="mt-2 font-display text-xs font-bold tracking-[0.18em] text-ink/80">RESPONSE TIME</p>
-                </div>
+        <div class="mt-6 flex flex-col gap-8 sm:mt-8 sm:flex-row sm:items-end sm:justify-between">
+          <div class="max-w-xl">
+            <p class="text-base font-medium leading-relaxed sm:text-xl text-ink/90">
+              Logos, websites and AI automation — made for real businesses, not for design awards.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-4">
+              <button class="brutal-btn bg-ink text-cream brutal-shadow-orange hover:-translate-y-0.5 js-open-modal">START A PROJECT</button>
+              <a href="#work" class="brutal-btn bg-paper text-ink hover:bg-yellow">SEE OUR WORK</a>
             </div>
-        </section>
+          </div>
 
-        <!-- ==========================================================================
-         3-STEP PROCESS SECTION
-         ========================================================================== -->
-        <section id="process" class="mx-auto max-w-7xl px-4 py-20 sm:px-6">
-            <div>
-                <p class="font-display text-sm font-bold tracking-[0.2em] text-orange">HOW IT WORKS</p>
-                <h2 class="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">No drama. Just
-                    delivery.</h2>
-            </div>
-
-            <div class="mt-12 grid gap-6 md:grid-cols-3">
-                <div class="flex gap-5 rounded-3xl border-2 border-ink bg-paper p-7 brutal-shadow">
-                    <span
-                        class="grid size-12 shrink-0 place-items-center rounded-full bg-orange font-display text-xl font-black text-cream">1</span>
-                    <div>
-                        <h3 class="font-display text-xl font-black">BRIEF</h3>
-                        <p class="mt-2 text-sm font-medium leading-relaxed text-ink/80">Tell us what you need. One call
-                            is enough to get moving.</p>
-                    </div>
-                </div>
-
-                <div class="flex gap-5 rounded-3xl border-2 border-ink bg-paper p-7 brutal-shadow">
-                    <span
-                        class="grid size-12 shrink-0 place-items-center rounded-full bg-orange font-display text-xl font-black text-cream">2</span>
-                    <div>
-                        <h3 class="font-display text-xl font-black">BUILD</h3>
-                        <p class="mt-2 text-sm font-medium leading-relaxed text-ink/80">Design, code and AI wired
-                            together — with updates along the way.</p>
-                    </div>
-                </div>
-
-                <div class="flex gap-5 rounded-3xl border-2 border-ink bg-paper p-7 brutal-shadow">
-                    <span
-                        class="grid size-12 shrink-0 place-items-center rounded-full bg-orange font-display text-xl font-black text-cream">3</span>
-                    <div>
-                        <h3 class="font-display text-xl font-black">LAUNCH</h3>
-                        <p class="mt-2 text-sm font-medium leading-relaxed text-ink/80">You go live. We stick around for
-                            support and upgrades.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==========================================================================
-         FOUNDERS SECTION
-         ========================================================================== -->
-        <section class="border-t-2 border-ink bg-paper py-16">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6">
-                <div class="flex items-end justify-between">
-                    <div>
-                        <p class="font-display text-sm font-bold tracking-[0.2em] text-orange">PARTNERS IN CRIME</p>
-                        <h2 class="mt-2 font-display text-3xl font-black uppercase tracking-tight sm:text-5xl">The two
-                            of us</h2>
-                    </div>
-                    <a href="about.html" class="brutal-btn bg-cream text-xs hover:bg-yellow hidden sm:inline-flex">READ
-                        MORE ABOUT US ↗</a>
-                </div>
-
-                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <article
-                        class="flex h-full flex-col justify-between gap-4 rounded-3xl border-2 border-ink bg-cream p-6 brutal-shadow">
-                        <h3 class="font-display text-2xl font-black">SIMRAN SINGH</h3>
-                        <div class="flex gap-3">
-                            <a href="https://www.instagram.com/simranbuildss/" target="_blank"
-                                class="grid size-9 place-items-center rounded-md border-2 border-ink bg-paper hover:-translate-y-0.5 transition-transform text-ink font-bold">IG</a>
-                            <a href="https://www.linkedin.com/in/simran-builds/" target="_blank"
-                                class="grid size-9 place-items-center rounded-md border-2 border-ink bg-paper hover:-translate-y-0.5 transition-transform text-ink font-bold">IN</a>
-                        </div>
-                    </article>
-
-                    <article
-                        class="flex h-full flex-col justify-between gap-4 rounded-3xl border-2 border-ink bg-cream p-6 brutal-shadow">
-                        <h3 class="font-display text-2xl font-black">SANKET AGRAWAL</h3>
-                        <div class="flex gap-3">
-                            <a href="https://www.instagram.com/sankett.agrawal/" target="_blank"
-                                class="grid size-9 place-items-center rounded-md border-2 border-ink bg-paper hover:-translate-y-0.5 transition-transform text-ink font-bold">IG</a>
-                            <a href="https://www.linkedin.com/in/sanket28/" target="_blank"
-                                class="grid size-9 place-items-center rounded-md border-2 border-ink bg-paper hover:-translate-y-0.5 transition-transform text-ink font-bold">IN</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==========================================================================
-         CALL TO ACTION SECTION
-         ========================================================================== -->
-        <section id="contact" class="border-t-2 border-ink bg-ink text-cream py-24 text-center">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6">
-                <svg viewBox="0 0 64 64" class="mx-auto size-12 text-orange" aria-hidden="true">
-                    <g stroke="currentColor" stroke-width="9" stroke-linecap="round">
-                        <line x1="32" y1="10" x2="32" y2="54"></line>
-                        <line x1="12.9" y1="21" x2="51.1" y2="43"></line>
-                        <line x1="12.9" y1="43" x2="51.1" y2="21"></line>
-                    </g>
+          <div class="hidden shrink-0 sm:block">
+            <div class="relative grid size-32 place-items-center">
+              <svg viewBox="0 0 120 120" class="absolute inset-0 animate-rot">
+                <defs>
+                  <path id="badge-circle" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"></path>
+                </defs>
+                <text class="fill-ink font-display text-[12.5px] font-bold tracking-[0.18em]">
+                  <textPath href="#badge-circle">DESIGN • BUILD • AUTOMATE • REPEAT •</textPath>
+                </text>
+              </svg>
+              <span class="grid size-12 place-items-center rounded-full bg-orange">
+                <svg viewBox="0 0 64 64" class="size-6 text-cream" aria-hidden="true">
+                  <g stroke="currentColor" stroke-width="9" stroke-linecap="round">
+                    <line x1="32" y1="10" x2="32" y2="54"></line>
+                    <line x1="12.9" y1="21" x2="51.1" y2="43"></line>
+                    <line x1="12.9" y1="43" x2="51.1" y2="21"></line>
+                  </g>
                 </svg>
-                <h2
-                    class="mt-6 font-display text-[clamp(2.5rem,8vw,6.5rem)] font-black uppercase leading-[0.95] tracking-tight">
-                    Got an idea? <span class="block text-orange">Let's build it.</span>
-                </h2>
-                <p class="mx-auto mt-6 max-w-md text-base font-medium text-cream/80 sm:text-lg">
-                    One message is all it takes. Tell us about your brand and we take it from there.
-                </p>
-                <div class="mt-9 flex flex-wrap justify-center gap-4">
-                    <button
-                        class="brutal-btn bg-orange text-cream brutal-shadow-yellow hover:-translate-y-0.5 js-open-modal">START
-                        A PROJECT</button>
-                    <a href="#work" class="brutal-btn border-cream text-cream hover:bg-cream hover:text-ink">SEE OUR
-                        WORK</a>
-                </div>
+              </span>
             </div>
-        </section>
-    </main>
-
-    <!-- ==========================================================================
-       FOOTER
-       ========================================================================== -->
-    <footer class="border-t-2 border-orange/30 bg-ink text-cream py-12">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 flex flex-col md:flex-row justify-between gap-10">
-            <div>
-                <a href="index.html" class="flex items-center gap-2.5 no-underline text-cream">
-                    <span class="grid size-9 place-items-center rounded-lg bg-orange">
-                        <svg viewBox="0 0 64 64" class="size-5 text-cream">
-                            <g stroke="currentColor" stroke-width="9" stroke-linecap="round">
-                                <line x1="32" y1="10" x2="32" y2="54"></line>
-                                <line x1="12.9" y1="21" x2="51.1" y2="43"></line>
-                                <line x1="12.9" y1="43" x2="51.1" y2="21"></line>
-                            </g>
-                        </svg>
-                    </span>
-                    <span class="font-display text-lg font-black tracking-tight">AI JUGAAD CO</span>
-                </a>
-                <nav class="mt-5 flex flex-wrap gap-6 text-xs font-bold font-display text-cream/70">
-                    <a href="#services" class="hover:text-orange">SERVICES</a>
-                    <a href="#work" class="hover:text-orange">WORK</a>
-                    <a href="about.html" class="hover:text-orange">ABOUT</a>
-                    <a href="careers.html" class="hover:text-orange">CAREERS</a>
-                    <a href="#contact" class="hover:text-orange">CONTACT</a>
-                </nav>
-            </div>
-            <div>
-                <p class="font-display text-xs font-black tracking-[0.18em] text-orange">FIND US HERE</p>
-                <div class="mt-3 flex flex-col gap-2 text-xs font-bold text-cream/80">
-                    <a href="https://www.instagram.com/aijugaad.co/" target="_blank"
-                        class="hover:text-cream">@aijugaad.co on Instagram</a>
-                    <a href="https://www.linkedin.com/company/ai-jugaad/" target="_blank" class="hover:text-cream">AI
-                        JUGAAD on LinkedIn</a>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="mt-10 border-t border-cream/10 pt-5 text-center font-display text-xs font-bold text-cream/40">
-            © 2026 AI JUGAAD CO — MADE WITH JUGAAD
+
+        <p class="mt-8 font-display text-xs font-bold tracking-[0.2em] text-ink/50 uppercase">
+          PSST — THE STICKERS ARE DRAGGABLE
+        </p>
+      </div>
+    </section>
+
+    <div class="marquee-wrapper">
+      <div class="marquee-content">
+        <div class="marquee-group">
+          <span class="marquee-item">LOGO DESIGN <svg viewBox="0 0 64 64" class="size-4 text-yellow"><g stroke="currentColor" stroke-width="10" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="56"></line><line x1="11.2" y1="20" x2="52.8" y2="44"></line><line x1="11.2" y1="44" x2="52.8" y2="20"></line></g></svg></span>
+          <span class="marquee-item">WEBSITES <svg viewBox="0 0 64 64" class="size-4 text-yellow"><g stroke="currentColor" stroke-width="10" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="56"></line><line x1="11.2" y1="20" x2="52.8" y2="44"></line><line x1="11.2" y1="44" x2="52.8" y2="20"></line></g></svg></span>
+          <span class="marquee-item">AI AUTOMATION <svg viewBox="0 0 64 64" class="size-4 text-yellow"><g stroke="currentColor" stroke-width="10" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="56"></line><line x1="11.2" y1="20" x2="52.8" y2="44"></line><line x1="11.2" y1="44" x2="52.8" y2="20"></line></g></svg></span>
+          <span class="marquee-item">BRANDING <svg viewBox="0 0 64 64" class="size-4 text-yellow"><g stroke="currentColor" stroke-width="10" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="56"></line><line x1="11.2" y1="20" x2="52.8" y2="44"></line><line x1="11.2" y1="44" x2="52.8" y2="20"></line></g></svg></span>
+          <span class="marquee-item">E-COMMERCE <svg viewBox="0 0 64 64" class="size-4 text-yellow"><g stroke="currentColor" stroke-width="10" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="56"></line><line x1="11.2" y1="20" x2="52.8" y2="44"></line><line x1="11.2" y1="44" x2="52.8" y2="20"></line></g></svg></span>
+          <span class="marquee-item">WHATSAPP BOTS <svg viewBox="0 0 64 64" class="size-4 text-yellow"><g stroke="currentColor" stroke-width="10" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="56"></line><line x1="11.2" y1="20" x2="52.8" y2="44"></line><line x1="11.2" y1="44" x2="52.8" y2="20"></line></g></svg></span>
         </div>
-    </footer>
-
-    <!-- ==========================================================================
-       INTERACTIVE MULTI-STEP PROJECT MODAL
-       ========================================================================== -->
-    <div id="projectModal" class="modal-backdrop">
-        <div class="modal-window">
-            <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close modal">✕</button>
-
-            <!-- STEP 1: SERVICE SELECTION -->
-            <div class="modal-step" data-step="1">
-                <span class="step-pill">01 / 03 — WHAT DO YOU NEED?</span>
-                <h3 class="font-display text-2xl font-black text-ink mb-4">Select services for your project:</h3>
-                <div class="flex flex-col gap-3">
-                    <div class="modal-option-card" data-type="service" data-val="Website Design">
-                        <span>🌐 Website Design & Development</span>
-                        <span>+</span>
-                    </div>
-                    <div class="modal-option-card" data-type="service" data-val="Logo & Branding">
-                        <span>🎨 Logo & Brand Identity</span>
-                        <span>+</span>
-                    </div>
-                    <div class="modal-option-card" data-type="service" data-val="AI Bot & Automation">
-                        <span>🤖 AI Bot & Workflow Automation</span>
-                        <span>+</span>
-                    </div>
-                </div>
-                <button class="brutal-btn bg-ink text-cream w-full mt-6 js-next-step">CONTINUE TO BUDGET →</button>
-            </div>
-
-            <!-- STEP 2: BUDGET RANGE -->
-            <div class="modal-step" data-step="2" style="display: none;">
-                <span class="step-pill">02 / 03 — ESTIMATED BUDGET</span>
-                <h3 class="font-display text-2xl font-black text-ink mb-4">What's your target budget?</h3>
-                <div class="flex flex-col gap-3">
-                    <div class="modal-option-card" data-type="budget" data-val="₹15,000 - ₹30,000">
-                        <span>⚡ ₹15,000 - ₹30,000</span>
-                    </div>
-                    <div class="modal-option-card" data-type="budget" data-val="₹30,000 - ₹75,000">
-                        <span>🚀 ₹30,000 - ₹75,000</span>
-                    </div>
-                    <div class="modal-option-card" data-type="budget" data-val="₹75,000+">
-                        <span>🔥 ₹75,000+</span>
-                    </div>
-                </div>
-                <div class="flex gap-3 mt-6">
-                    <button class="brutal-btn bg-paper text-ink w-1/3 js-prev-step">← BACK</button>
-                    <button class="brutal-btn bg-ink text-cream w-2/3 js-next-step">NEXT STEP →</button>
-                </div>
-            </div>
-
-            <!-- STEP 3: CONTACT DETAILS -->
-            <form id="modalProjectForm" class="modal-step" data-step="3" style="display: none;">
-                <span class="step-pill">03 / 03 — YOUR CONTACT DETAILS</span>
-                <h3 class="font-display text-2xl font-black text-ink mb-4">Where should we reply?</h3>
-                <div class="flex flex-col gap-3">
-                    <div>
-                        <label class="block font-display text-xs font-bold text-ink mb-1">YOUR NAME</label>
-                        <input type="text" id="clientName" required class="brutal-input" placeholder="e.g. Alex Sharma">
-                    </div>
-                    <div>
-                        <label class="block font-display text-xs font-bold text-ink mb-1">EMAIL ADDRESS</label>
-                        <input type="email" id="clientEmail" required class="brutal-input"
-                            placeholder="alex@company.com">
-                    </div>
-                    <div>
-                        <label class="block font-display text-xs font-bold text-ink mb-1">PHONE / WHATSAPP</label>
-                        <input type="tel" id="clientPhone" required class="brutal-input" placeholder="+91 98765 43210">
-                    </div>
-                </div>
-                <div class="flex gap-3 mt-6">
-                    <button type="button" class="brutal-btn bg-paper text-ink w-1/3 js-prev-step">← BACK</button>
-                    <button type="submit" class="brutal-btn bg-orange text-cream w-2/3">SUBMIT PROJECT REQUEST
-                        🔥</button>
-                </div>
-            </form>
-
-            <!-- STEP 4: SUCCESS CONFIRMATION -->
-            <div class="modal-step text-center" data-step="4" style="display: none;">
-                <span class="text-5xl">🎉</span>
-                <h3 class="font-display text-3xl font-black text-ink mt-3">REQUEST RECEIVED!</h3>
-                <p class="text-sm font-medium text-ink/80 mt-2">
-                    Thanks for reaching out! The AI Jugaad team will review your details and get back to you within 24
-                    hours.
-                </p>
-                <button class="brutal-btn bg-ink text-cream w-full mt-6" onclick="location.reload()">DONE</button>
-            </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span class="marquee-item">LOGO DESIGN <svg viewBox="0 0 64 64" class="size-4 text-yellow"><g stroke="currentColor" stroke-width="10" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="56"></line><line x1="11.2" y1="20" x2="52.8" y2="44"></line><line x1="11.2" y1="44" x2="52.8" y2="20"></line></g></svg></span>
+          <span class="marquee-item">WEBSITES <svg viewBox="0 0 64 64" class="size-4 text-yellow"><g stroke="currentColor" stroke-width="10" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="56"></line><line x1="11.2" y1="20" x2="52.8" y2="44"></line><line x1="11.2" y1="44" x2="52.8" y2="20"></line></g></svg></span>
+          <span class="marquee-item">AI AUTOMATION <svg viewBox="0 0 64 64" class="size-4 text-yellow"><g stroke="currentColor" stroke-width="10" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="56"></line><line x1="11.2" y1="20" x2="52.8" y2="44"></line><line x1="11.2" y1="44" x2="52.8" y2="20"></line></g></svg></span>
+          <span class="marquee-item">BRANDING <svg viewBox="0 0 64 64" class="size-4 text-yellow"><g stroke="currentColor" stroke-width="10" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="56"></line><line x1="11.2" y1="20" x2="52.8" y2="44"></line><line x1="11.2" y1="44" x2="52.8" y2="20"></line></g></svg></span>
+          <span class="marquee-item">E-COMMERCE <svg viewBox="0 0 64 64" class="size-4 text-yellow"><g stroke="currentColor" stroke-width="10" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="56"></line><line x1="11.2" y1="20" x2="52.8" y2="44"></line><line x1="11.2" y1="44" x2="52.8" y2="20"></line></g></svg></span>
+          <span class="marquee-item">WHATSAPP BOTS <svg viewBox="0 0 64 64" class="size-4 text-yellow"><g stroke="currentColor" stroke-width="10" stroke-linecap="round"><line x1="32" y1="8" x2="32" y2="56"></line><line x1="11.2" y1="20" x2="52.8" y2="44"></line><line x1="11.2" y1="44" x2="52.8" y2="20"></line></g></svg></span>
         </div>
+      </div>
     </div>
 
-    <script src="js/main.js"></script>
-</body>
+    <section id="services" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24">
+      <div>
+        <p class="font-display text-sm font-bold tracking-[0.2em] text-orange uppercase">THREE THINGS. DONE RIGHT.</p>
+        <h2 class="mt-2 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">What we do</h2>
+      </div>
 
+      <div class="scratch-card-container">
+        <canvas id="scratchCanvas" class="scratch-canvas"></canvas>
+        <div id="scratchHint" class="scratch-hint">🖐️ SWIPE / SCRATCH TO REVEAL SERVICES</div>
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div class="flex flex-col justify-between rounded-2xl border-2 border-ink bg-yellow p-6 brutal-shadow">
+            <div>
+              <span class="font-display text-4xl font-black text-orange">01</span>
+              <h3 class="mt-3 font-display text-2xl font-black tracking-tight">LOGO & BRANDING</h3>
+              <p class="mt-2 text-sm font-medium opacity-90">A mark people remember.</p>
+            </div>
+            <ul class="mt-6 flex flex-col gap-2.5 border-t-2 border-ink/20 pt-4">
+              <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide"><span class="size-2 rounded-full bg-orange"></span>LOGO SUITES</li>
+              <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide"><span class="size-2 rounded-full bg-orange"></span>BRAND KITS</li>
+              <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide"><span class="size-2 rounded-full bg-orange"></span>SOCIAL IDENTITY</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col justify-between rounded-2xl border-2 border-ink bg-paper p-6 brutal-shadow">
+            <div>
+              <span class="font-display text-4xl font-black text-orange">02</span>
+              <h3 class="mt-3 font-display text-2xl font-black tracking-tight">WEBSITES</h3>
+              <p class="mt-2 text-sm font-medium opacity-90">Fast, modern, made to convert.</p>
+            </div>
+            <ul class="mt-6 flex flex-col gap-2.5 border-t-2 border-ink/20 pt-4">
+              <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide"><span class="size-2 rounded-full bg-orange"></span>E-COMMERCE STORES</li>
+              <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide"><span class="size-2 rounded-full bg-orange"></span>LANDING PAGES</li>
+              <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide"><span class="size-2 rounded-full bg-orange"></span>ADMIN DASHBOARDS</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col justify-between rounded-2xl border-2 border-ink bg-ink text-cream p-6 brutal-shadow">
+            <div>
+              <span class="font-display text-4xl font-black text-orange">03</span>
+              <h3 class="mt-3 font-display text-2xl font-black tracking-tight">AI AUTOMATION</h3>
+              <p class="mt-2 text-sm font-medium opacity-80">Robots for the boring stuff.</p>
+            </div>
+            <ul class="mt-6 flex flex-col gap-2.5 border-t-2 border-cream/20 pt-4">
+              <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide text-cream"><span class="size-2 rounded-full bg-orange"></span>WHATSAPP BOTS</li>
+              <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide text-cream"><span class="size-2 rounded-full bg-orange"></span>LEAD CAPTURE</li>
+              <li class="flex items-center gap-2.5 font-display text-xs font-bold tracking-wide text-cream"><span class="size-2 rounded-full bg-orange"></span>WORKFLOW AUTOMATION</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="border-y-2 border-ink bg-paper py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p class="font-display text-sm font-bold tracking-[0.2em] text-orange">SELECTED WORK</p>
+            <h2 class="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">Built by us. Loved by clients.</h2>
+          </div>
+          <p class="max-w-xs text-sm font-medium text-ink/70">A few of the brands we design, build and automate for.</p>
+        </div>
+
+        <div class="mx-auto mt-12 grid max-w-5xl grid-cols-1 sm:grid-cols-2 gap-6">
+          <a href="https://www.deepsaindia.com/" target="_blank" rel="noopener noreferrer" class="group block overflow-hidden rounded-2xl border-2 border-ink bg-cream brutal-shadow brutal-shadow-hover no-underline text-ink">
+            <div class="relative flex aspect-[16/9] items-center justify-center bg-orange text-cream font-display text-7xl font-black">
+              DI
+              <span class="absolute right-4 top-4 rounded-full border-2 border-ink bg-cream px-3 py-1 font-display text-xs font-bold text-ink">E-COMMERCE</span>
+            </div>
+            <div class="flex items-center justify-between border-t-2 border-ink p-5">
+              <h3 class="font-display text-xl font-black">DEEPSA INDIA</h3>
+              <span class="grid size-9 place-items-center rounded-full border-2 border-ink transition-colors group-hover:bg-orange group-hover:text-cream">↗</span>
+            </div>
+          </a>
+
+          <a href="https://www.woodytales.in/" target="_blank" rel="noopener noreferrer" class="group block overflow-hidden rounded-2xl border-2 border-ink bg-cream brutal-shadow brutal-shadow-hover no-underline text-ink">
+            <div class="relative flex aspect-[16/9] items-center justify-center bg-ink text-yellow font-display text-7xl font-black">
+              WT
+              <span class="absolute right-4 top-4 rounded-full border-2 border-ink bg-cream px-3 py-1 font-display text-xs font-bold text-ink">E-COMMERCE</span>
+            </div>
+            <div class="flex items-center justify-between border-t-2 border-ink p-5">
+              <h3 class="font-display text-xl font-black">WOODY TALES</h3>
+              <span class="grid size-9 place-items-center rounded-full border-2 border-ink transition-colors group-hover:bg-orange group-hover:text-cream">↗</span>
+            </div>
+          </a>
+
+          <div class="group block overflow-hidden rounded-2xl border-2 border-ink bg-cream brutal-shadow">
+            <div class="relative flex aspect-[16/9] items-center justify-center bg-yellow text-ink font-display text-7xl font-black">
+              VP
+              <span class="absolute right-4 top-4 rounded-full border-2 border-ink bg-cream px-3 py-1 font-display text-xs font-bold text-ink">LANDING PAGE</span>
+            </div>
+            <div class="flex items-center justify-between border-t-2 border-ink p-5">
+              <h3 class="font-display text-xl font-black">VELORA PROPERTY CARE</h3>
+            </div>
+          </div>
+
+          <a href="https://clayandglaze.in/" target="_blank" rel="noopener noreferrer" class="group block overflow-hidden rounded-2xl border-2 border-ink bg-cream brutal-shadow brutal-shadow-hover no-underline text-ink">
+            <div class="relative flex aspect-[16/9] items-center justify-center bg-paper text-ink font-display text-7xl font-black">
+              CG
+              <span class="absolute right-4 top-4 rounded-full border-2 border-ink bg-cream px-3 py-1 font-display text-xs font-bold text-ink">E-COMMERCE</span>
+            </div>
+            <div class="flex items-center justify-between border-t-2 border-ink p-5">
+              <h3 class="font-display text-xl font-black">CLAY & GLAZE</h3>
+              <span class="grid size-9 place-items-center rounded-full border-2 border-ink transition-colors group-hover:bg-orange group-hover:text-cream">↗</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-cream">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div>
+          <p class="font-display text-sm font-bold tracking-[0.2em] text-orange">SCREENSHOTS DON'T LIE</p>
+          <h2 class="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">Straight from the DMs.</h2>
+        </div>
+
+        <div class="reviews-scroll-container mt-10">
+          <article class="review-card">
+            <div class="relative flex aspect-[13/5] items-center justify-center bg-ink text-yellow border-b-2 border-ink font-display text-3xl font-black">
+              PJ
+              <span class="absolute right-3 top-3 rounded-full border-2 border-ink bg-cream px-2.5 py-0.5 font-display text-[0.6rem] font-bold text-ink">INSTAGRAM</span>
+            </div>
+            <div class="flex flex-1 flex-col p-5 gap-3">
+              <div class="rounded-xl border-2 border-ink bg-cream p-4 text-xs font-semibold leading-relaxed">
+                "Really appreciate your work — due to reviews and trust factor we have seen so much increase in sales volume. And ROAS has surely improved."
+              </div>
+              <div class="mt-auto flex items-center justify-between pt-2">
+                <a href="https://pashupati.co/" target="_blank" class="font-display text-xs font-black text-ink underline decoration-orange">pashupati.co</a>
+                <span class="font-display text-[0.6rem] font-bold text-orange">JEWELRY WHOLESALER</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="relative flex aspect-[13/5] items-center justify-center bg-orange text-cream border-b-2 border-ink font-display text-3xl font-black">
+              DI
+              <span class="absolute right-3 top-3 rounded-full border-2 border-ink bg-cream px-2.5 py-0.5 font-display text-[0.6rem] font-bold text-ink">INSTAGRAM</span>
+            </div>
+            <div class="flex flex-1 flex-col p-5 gap-3">
+              <div class="rounded-xl border-2 border-ink bg-cream p-4 text-xs font-semibold leading-relaxed">
+                "Loved the clean UI and how fast the store renders! Our customer conversions doubled within 2 weeks after launch."
+              </div>
+              <div class="mt-auto flex items-center justify-between pt-2">
+                <a href="https://deepsaindia.com/" target="_blank" class="font-display text-xs font-black text-ink underline decoration-orange">deepsaindia.com</a>
+                <span class="font-display text-[0.6rem] font-bold text-orange">E-COMMERCE BRAND</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="relative flex aspect-[13/5] items-center justify-center bg-yellow text-ink border-b-2 border-ink font-display text-3xl font-black">
+              WT
+              <span class="absolute right-3 top-3 rounded-full border-2 border-ink bg-cream px-2.5 py-0.5 font-display text-[0.6rem] font-bold text-ink">WHATSAPP</span>
+            </div>
+            <div class="flex flex-1 flex-col p-5 gap-3">
+              <div class="rounded-xl border-2 border-ink bg-cream p-4 text-xs font-semibold leading-relaxed">
+                "The WhatsApp lead bot is working 24/7 like a charm. No manual lead follow-ups needed anymore!"
+              </div>
+              <div class="mt-auto flex items-center justify-between pt-2">
+                <a href="https://woodytales.in/" target="_blank" class="font-display text-xs font-black text-ink underline decoration-orange">woodytales.in</a>
+                <span class="font-display text-[0.6rem] font-bold text-orange">FURNITURE STORE</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-14 text-center">
+          <p class="font-display text-xs font-black tracking-[0.2em] text-ink/60">YOUR BRAND COULD BE ON THIS ROW</p>
+          <div class="mt-5 inline-block relative">
+            <button class="brutal-btn bg-orange text-cream text-lg py-4 px-10 brutal-shadow-lg js-open-modal">GET YOUR WEBSITE TODAY</button>
+            <span class="absolute -top-3 -right-4 rotate-6 rounded-full border-2 border-ink bg-yellow px-2 py-0.5 font-display text-[0.6rem] font-black text-ink">WE REPLY IN 24 HRS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-banner">
+      <div class="mx-auto max-w-7xl stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="15" data-suffix="+">0+</div>
+          <p class="mt-2 font-display text-xs font-bold tracking-[0.18em] text-ink/80">HAPPY CLIENTS</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="25" data-suffix="+">0+</div>
+          <p class="mt-2 font-display text-xs font-bold tracking-[0.18em] text-ink/80">PROJECTS SHIPPED</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="24" data-suffix="H">&lt;0H</div>
+          <p class="mt-2 font-display text-xs font-bold tracking-[0.18em] text-ink/80">RESPONSE TIME</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <div>
+        <p class="font-display text-sm font-bold tracking-[0.2em] text-orange">HOW IT WORKS</p>
+        <h2 class="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">No drama. Just delivery.</h2>
+      </div>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <div class="flex gap-5 rounded-3xl border-2 border-ink bg-paper p-7 brutal-shadow">
+          <span class="grid size-12 shrink-0 place-items-center rounded-full bg-orange font-display text-xl font-black text-cream">1</span>
+          <div>
+            <h3 class="font-display text-xl font-black">BRIEF</h3>
+            <p class="mt-2 text-sm font-medium leading-relaxed text-ink/80">Tell us what you need. One call is enough to get moving.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 rounded-3xl border-2 border-ink bg-paper p-7 brutal-shadow">
+          <span class="grid size-12 shrink-0 place-items-center rounded-full bg-orange font-display text-xl font-black text-cream">2</span>
+          <div>
+            <h3 class="font-display text-xl font-black">BUILD</h3>
+            <p class="mt-2 text-sm font-medium leading-relaxed text-ink/80">Design, code and AI wired together — with updates along the way.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 rounded-3xl border-2 border-ink bg-paper p-7 brutal-shadow">
+          <span class="grid size-12 shrink-0 place-items-center rounded-full bg-orange font-display text-xl font-black text-cream">3</span>
+          <div>
+            <h3 class="font-display text-xl font-black">LAUNCH</h3>
+            <p class="mt-2 text-sm font-medium leading-relaxed text-ink/80">You go live. We stick around for support and upgrades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-t-2 border-ink bg-paper py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div class="flex items-end justify-between">
+          <div>
+            <p class="font-display text-sm font-bold tracking-[0.2em] text-orange">PARTNERS IN CRIME</p>
+            <h2 class="mt-2 font-display text-3xl font-black uppercase tracking-tight sm:text-5xl">The two of us</h2>
+          </div>
+          <a href="about.html" class="brutal-btn bg-cream text-xs hover:bg-yellow hidden sm:inline-flex">READ MORE ABOUT US ↗</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <article class="flex h-full flex-col justify-between gap-4 rounded-3xl border-2 border-ink bg-cream p-6 brutal-shadow">
+            <h3 class="font-display text-2xl font-black">SIMRAN SINGH</h3>
+            <div class="flex gap-3">
+              <a href="https://www.instagram.com/simranbuildss/" target="_blank" class="grid size-9 place-items-center rounded-md border-2 border-ink bg-paper hover:-translate-y-0.5 transition-transform text-ink font-bold">IG</a>
+              <a href="https://www.linkedin.com/in/simran-builds/" target="_blank" class="grid size-9 place-items-center rounded-md border-2 border-ink bg-paper hover:-translate-y-0.5 transition-transform text-ink font-bold">IN</a>
+            </div>
+          </article>
+
+          <article class="flex h-full flex-col justify-between gap-4 rounded-3xl border-2 border-ink bg-cream p-6 brutal-shadow">
+            <h3 class="font-display text-2xl font-black">SANKET AGRAWAL</h3>
+            <div class="flex gap-3">
+              <a href="https://www.instagram.com/sankett.agrawal/" target="_blank" class="grid size-9 place-items-center rounded-md border-2 border-ink bg-paper hover:-translate-y-0.5 transition-transform text-ink font-bold">IG</a>
+              <a href="https://www.linkedin.com/in/sanket28/" target="_blank" class="grid size-9 place-items-center rounded-md border-2 border-ink bg-paper hover:-translate-y-0.5 transition-transform text-ink font-bold">IN</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="border-t-2 border-ink bg-ink text-cream py-24 text-center">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <svg viewBox="0 0 64 64" class="mx-auto size-12 text-orange" aria-hidden="true">
+          <g stroke="currentColor" stroke-width="9" stroke-linecap="round">
+            <line x1="32" y1="10" x2="32" y2="54"></line>
+            <line x1="12.9" y1="21" x2="51.1" y2="43"></line>
+            <line x1="12.9" y1="43" x2="51.1" y2="21"></line>
+          </g>
+        </svg>
+        <h2 class="mt-6 font-display text-[clamp(2.5rem,8vw,6.5rem)] font-black uppercase leading-[0.95] tracking-tight">
+          Got an idea? <span class="block text-orange">Let's build it.</span>
+        </h2>
+        <p class="mx-auto mt-6 max-w-md text-base font-medium text-cream/80 sm:text-lg">
+          One message is all it takes. Tell us about your brand and we take it from there.
+        </p>
+        <div class="mt-9 flex flex-wrap justify-center gap-4">
+          <button class="brutal-btn bg-orange text-cream brutal-shadow-yellow hover:-translate-y-0.5 js-open-modal">START A PROJECT</button>
+          <a href="#work" class="brutal-btn border-cream text-cream hover:bg-cream hover:text-ink">SEE OUR WORK</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t-2 border-orange/30 bg-ink text-cream py-12">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 flex flex-col md:flex-row justify-between gap-10">
+      <div>
+        <a href="index.html" class="flex items-center gap-2.5 no-underline text-cream">
+          <span class="grid size-9 place-items-center rounded-lg bg-orange">
+            <svg viewBox="0 0 64 64" class="size-5 text-cream"><g stroke="currentColor" stroke-width="9" stroke-linecap="round"><line x1="32" y1="10" x2="32" y2="54"></line><line x1="12.9" y1="21" x2="51.1" y2="43"></line><line x1="12.9" y1="43" x2="51.1" y2="21"></line></g></svg>
+          </span>
+          <span class="font-display text-lg font-black tracking-tight">AI JUGAAD CO</span>
+        </a>
+        <nav class="mt-5 flex flex-wrap gap-6 text-xs font-bold font-display text-cream/70">
+          <a href="#services" class="hover:text-orange">SERVICES</a>
+          <a href="#work" class="hover:text-orange">WORK</a>
+          <a href="about.html" class="hover:text-orange">ABOUT</a>
+          <a href="careers.html" class="hover:text-orange">CAREERS</a>
+          <a href="#contact" class="hover:text-orange">CONTACT</a>
+        </nav>
+      </div>
+      <div>
+        <p class="font-display text-xs font-black tracking-[0.18em] text-orange">FIND US HERE</p>
+        <div class="mt-3 flex flex-col gap-2 text-xs font-bold text-cream/80">
+          <a href="https://www.instagram.com/aijugaad.co/" target="_blank" class="hover:text-cream">@aijugaad.co on Instagram</a>
+          <a href="https://www.linkedin.com/company/ai-jugaad/" target="_blank" class="hover:text-cream">AI JUGAAD on LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-cream/10 pt-5 text-center font-display text-xs font-bold text-cream/40">
+      © 2026 AI JUGAAD CO — MADE WITH JUGAAD
+    </div>
+  </footer>
+
+  <div id="projectModal" class="modal-backdrop">
+    <div class="modal-window">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close modal">✕</button>
+
+      <div class="modal-step" data-step="1">
+        <span class="step-pill">01 / 03 — WHAT DO YOU NEED?</span>
+        <h3 class="font-display text-2xl font-black text-ink mb-4">Select services for your project:</h3>
+        <div class="flex flex-col gap-3">
+          <div class="modal-option-card" data-type="service" data-val="Website Design">
+            <span>🌐 Website Design & Development</span>
+            <span>+</span>
+          </div>
+          <div class="modal-option-card" data-type="service" data-val="Logo & Branding">
+            <span>🎨 Logo & Brand Identity</span>
+            <span>+</span>
+          </div>
+          <div class="modal-option-card" data-type="service" data-val="AI Bot & Automation">
+            <span>🤖 AI Bot & Workflow Automation</span>
+            <span>+</span>
+          </div>
+        </div>
+        <button class="brutal-btn bg-ink text-cream w-full mt-6 js-next-step">CONTINUE TO BUDGET →</button>
+      </div>
+
+      <div class="modal-step" data-step="2" style="display: none;">
+        <span class="step-pill">02 / 03 — ESTIMATED BUDGET</span>
+        <h3 class="font-display text-2xl font-black text-ink mb-4">What's your target budget?</h3>
+        <div class="flex flex-col gap-3">
+          <div class="modal-option-card" data-type="budget" data-val="₹15,000 - ₹30,000">
+            <span>⚡ ₹15,000 - ₹30,000</span>
+          </div>
+          <div class="modal-option-card" data-type="budget" data-val="₹30,000 - ₹75,000">
+            <span>🚀 ₹30,000 - ₹75,000</span>
+          </div>
+          <div class="modal-option-card" data-type="budget" data-val="₹75,000+">
+            <span>🔥 ₹75,000+</span>
+          </div>
+        </div>
+        <div class="flex gap-3 mt-6">
+          <button class="brutal-btn bg-paper text-ink w-1/3 js-prev-step">← BACK</button>
+          <button class="brutal-btn bg-ink text-cream w-2/3 js-next-step">NEXT STEP →</button>
+        </div>
+      </div>
+
+      <form id="modalProjectForm" class="modal-step" data-step="3" style="display: none;">
+        <span class="step-pill">03 / 03 — YOUR CONTACT DETAILS</span>
+        <h3 class="font-display text-2xl font-black text-ink mb-4">Where should we reply?</h3>
+        <div class="flex flex-col gap-3">
+          <div>
+            <label class="block font-display text-xs font-bold text-ink mb-1">YOUR NAME</label>
+            <input type="text" id="clientName" required class="brutal-input" placeholder="e.g. Alex Sharma">
+          </div>
+          <div>
+            <label class="block font-display text-xs font-bold text-ink mb-1">EMAIL ADDRESS</label>
+            <input type="email" id="clientEmail" required class="brutal-input" placeholder="alex@company.com">
+          </div>
+          <div>
+            <label class="block font-display text-xs font-bold text-ink mb-1">PHONE / WHATSAPP</label>
+            <input type="tel" id="clientPhone" required class="brutal-input" placeholder="+91 98765 43210">
+          </div>
+        </div>
+        <div class="flex gap-3 mt-6">
+          <button type="button" class="brutal-btn bg-paper text-ink w-1/3 js-prev-step">← BACK</button>
+          <button type="submit" class="brutal-btn bg-orange text-cream w-2/3">SUBMIT PROJECT REQUEST 🔥</button>
+        </div>
+      </form>
+
+      <div class="modal-step text-center" data-step="4" style="display: none;">
+        <span class="text-5xl">🎉</span>
+        <h3 class="font-display text-3xl font-black text-ink mt-3">REQUEST RECEIVED!</h3>
+        <p class="text-sm font-medium text-ink/80 mt-2">
+          Thanks for reaching out! The AI Jugaad team will review your details and get back to you within 24 hours.
+        </p>
+        <button class="brutal-btn bg-ink text-cream w-full mt-6" onclick="location.reload()">DONE</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
