@@ -20,12 +20,12 @@ function initHeadlineSlider() {
 
     setTimeout(() => {
       prevSlide.classList.remove('exit');
-    }, 700);
+    }, 550);
 
     currentIndex = (currentIndex + 1) % slides.length;
     const nextSlide = slides[currentIndex];
     nextSlide.classList.add('active');
-  }, 2000);
+  }, 2900);
 }
 
 function initDraggableStickers() {
@@ -34,11 +34,6 @@ function initDraggableStickers() {
   stickers.forEach((sticker) => {
     let isDragging = false;
     let startX, startY, initialLeft, initialTop;
-
-    setTimeout(() => {
-      sticker.style.opacity = '1';
-      sticker.style.transform = sticker.getAttribute('data-original-transform') || sticker.style.transform;
-    }, 300);
 
     const onStart = (e) => {
       isDragging = true;
@@ -53,7 +48,13 @@ function initDraggableStickers() {
       initialLeft = rect.left - parentRect.left;
       initialTop = rect.top - parentRect.top;
 
-      sticker.style.zIndex = '100';
+      sticker.style.left = `${initialLeft}px`;
+      sticker.style.top = `${initialTop}px`;
+      sticker.style.right = 'auto';
+      sticker.style.bottom = 'auto';
+
+      sticker.classList.add('dragging');
+
       document.addEventListener('mousemove', onMove);
       document.addEventListener('mouseup', onEnd);
       document.addEventListener('touchmove', onMove, { passive: false });
@@ -75,8 +76,9 @@ function initDraggableStickers() {
     };
 
     const onEnd = () => {
+      if (!isDragging) return;
       isDragging = false;
-      sticker.style.zIndex = '30';
+      sticker.classList.remove('dragging');
       document.removeEventListener('mousemove', onMove);
       document.removeEventListener('mouseup', onEnd);
       document.removeEventListener('touchmove', onMove);
